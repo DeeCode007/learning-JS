@@ -1,2 +1,3 @@
 this is a learning process of how to save file through terminal AND CHANGING- 1
 now we are doing some changes in this file and creating a new branch so that our main project will not be effected
+we had created a new branch named dev and did some changes in this file and then we merged dev branch to main branch so that we can see new changes in it
