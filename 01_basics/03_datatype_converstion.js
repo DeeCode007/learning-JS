@@ -1,7 +1,7 @@
 //first we will convert any values to number and will see their types.
 //### number to number
-let num1 = 33
-// console.log(num1)
+//let num1 = 33
+//console.log(num1)
 //console.log(typeof num1)
     //output => 33 ; number
 
@@ -31,7 +31,7 @@ let string1 = "33abc"
     //output => string ; number
 
 // string+number to number
-string2 = Number(string1)
-console.log(typeof string2)
-console.log (string2)
+//string2 = Number(string1)
+//console.log(typeof string2)
+//console.log (string2)
     // output => number ; NaN (Not an Number) 
