@@ -28,3 +28,6 @@ let myCreatedDate = new Date (2023,5,22,5) //  second way to input date as strin
 //         hour : "numeric",
 //         weekday : "short"
 // }))
+
+console.log(employee.details(5,2));
+console.log(typeof details)
