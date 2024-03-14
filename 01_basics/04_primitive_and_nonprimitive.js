@@ -13,13 +13,14 @@ let c = 5;
 
 //#### NOTE -  Primitive data type - primitive data type stores in stack memory. primitive data types are not mutable, it means once we declare a variable with primitive data type , it can't be directly alter , we will have to reassign to change the value. 
  
+
 //---------------------------------------------------------------------
 
 let obj1 = {Fname : "dee" , Lname : "gehlot" };
 let obj2 = {Fname : "dee" , Lname : "gehlot" };
 let obj3 = obj1
-// console.log(obj1===obj2)
+// console.log(obj1===obj2) //
 // console.log(obj3===obj1)
-// output = false; true  // non-primitive data types compares the reference stored in stack memory in their variable thats why even obj1 and obj2 have same values but it returns false but when we assigned obj1 to obj3 , js engine actually didn't assign the value, it assigned the reference to obj3 variable and thats why we got true. 
+// output = false; true ; // non-primitive data types compares the reference stored in stack memory in their variable thats why even obj1 and obj2 have same values but it returns false but when we assigned obj1 to obj3 , js engine actually didn't assign the value, it assigned the reference to obj3 variable and thats why we got true. 
 // ### NOTE - non-primitiva data type are object array and function . when we assign a object to a variable in key-pair values then the values stores in heap memory and its reference stores in stack memory in the variable. 
 // non-primitve data type are mutable it means we can alter their values by using object properties and we don't need to reassign the value to change it like primitive data types. 

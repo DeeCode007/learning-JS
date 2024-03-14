@@ -21,13 +21,13 @@
 //console.log(num1)
 //console.log(typeof num1)
     //output => true; boolean
-    //note -  it is always true if number is not 0 nor a empty value. it will always show true if even given value is string.
+    //note -  it is always true if number is not 0 nor a empty value nor a NaN then it will always show true if even given value is string.
 
 // string to number
 let string1 = "33abc"
-//console.log(typeof string1)
-//string2 = Number(string1) //converting string to number
-//console.log(typeof string2)
+// console.log(typeof string1)
+// string2 = Number(string1) //converting string to number
+// console.log(typeof string2)
     //output => string ; number
 
 // string+number to number

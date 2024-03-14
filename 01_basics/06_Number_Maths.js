@@ -31,7 +31,11 @@
 
 //lets use the min max and random no methods to create a random no. generator between our desired range.
 //lets assume that we want to get the value between 10 and 20.
-let min = 10
-let max = 20 
-console.log(Math.floor(((Math.random()) * (max - min + 1 ) + min)))
+// let min = 10
+// let max = 20 
+// console.log(Math.floor(((Math.random()) * (max - min + 1 ) + min)))
 // output = random no between 10 and 20 
+
+//an example of assignment operator 
+// let x = 25 , y = 5
+// console.log(x += y) // output = 30

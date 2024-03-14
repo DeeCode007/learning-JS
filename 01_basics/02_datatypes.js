@@ -1,4 +1,4 @@
-// JS data types are dynamic means if you declare a variable let and define it with a int data type but later when you reassign a value, you can reassign anything you want like string whatever . variables data type will be changed according to it.
+// JS data types are dynamic means if you declare a variable let and define it with a number data type but later when you reassign a value, you can reassign anything you want like string whatever . variables data type will be changed according to it.
 
 let num1 = 2500; //it is number data type
 num1 ="number" // it is string data type

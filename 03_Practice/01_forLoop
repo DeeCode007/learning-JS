@@ -1,0 +1,13 @@
+let raw = 5;
+for( let i=0;i<raw;i++)
+{
+    for(let j=1;j<=2*(raw-i); j++)
+    {
+        process.stdout.write(' ')
+    }
+    for(let k=1;k<=i;k++)
+    {
+        process.stdout.write('* ')
+    }
+    console.log();
+}

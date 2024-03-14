@@ -11,24 +11,25 @@
 let stringObj = new String("I am learning javascript , by chai aur javascript tutorial.")
 // console.log(stringObj) // It shows the string as a object
 
-// console.log(stringObj.charAt(6)) // output = e // character at 6th index
+// console.log(stringObj.charAt(6))// output = e // character at 6th index
 
 // console.log(stringObj.indexOf("learning")) // output = 5 // index of first appearance of the learning word and it will show only first character index.
 
 // let indexCollector = stringObj.indexOf("javascript")
 // console.log(indexCollector)
 // console.log(stringObj.indexOf("javascript" , indexCollector + 1)) // indexOf can have 2 parameters , 1st parameter for the keyword we need to find the index and secondparamter for where we need to start searching by index.
-// output = 14; 39 // 14th index is first appearance of the javascript and 39th index of 2nd appearance of javascript. 
+// output = 14; 39; // 14th index is first appearance of the javascript and 39th index of 2nd appearance of javascript. 
 
 // let lengthExp = "deepak"
 // console.log(lengthExp.length) // output = 6 // it shows the lenght of string or a sentance 
 
 // console.log(stringObj[6]) // output = e / work same as charAt
 
-// console.log(stringObj[stringObj.length - 2]) // work same as charAt but in a different way.
+// console.log(stringObj[stringObj.length - 3]) // output = a ;// work same as charAt but in a different way.
 
 // let stringPrim  = "deepak"
 // console.log(stringPrim.includes("ee")) // Output = true // we use include method to search and in return the value as true of false
+// console.log(stringObj.includes("javascript")) // output = true
 
 // console.log(stringObj.startsWith("learn")) // output = false // we use startswith method to findout that the string is starting with the same parameter we give and it returns the values as true or false. Above string does not start with learn, it start with "I am" thats why we received false. 
 // console.log(stringObj.startsWith("I am")) // output = true 
@@ -46,7 +47,8 @@ let stringObj = new String("I am learning javascript , by chai aur javascript tu
 // console.log(stringObj.toUpperCase()) // converts to all string in uppercase
 // console.log(stringObj.toLocaleUpperCase("learning")) // it doesn't give a fuck if we want to convert substring of a string into upper by using toUpperCase method but lets try to do it in following example
 
-// we just tried to convert a lower case substring into upper case in a sentence in our own way
+// we just tried to convert a lower case substring into upper case in a sentence in our own way but as it was a first try, I made it complicated but later i realised that i was making a mistake and i did the same thing by three lines of code which is written just after this code. 
+
 /*let StartIndexCollector = stringObj.indexOf("learning")
 console.log(StartIndexCollector)
 let length = "learning".length
@@ -56,6 +58,16 @@ let splitWord = stringObj.slice(StartIndexCollector, endIndexCollector)
 let UpperCase = splitWord.toUpperCase()
 console.log(stringObj.replace("learning", UpperCase))*/
 //NOTE -  Be aware that replace() in this form only changes the first occurrence of the substring. If you want to change all occurrences, you can use replaceAll():
+
+//better way to convert a substring to uppercase
+/*let word = "learning"
+let WordUppercase = word.toUpperCase()
+console.log(stringObj.replace(word , WordUppercase))*/
+
+// how to replace a word in sentence 
+/*let findWord = "learning"
+let replaceWord = "teaching"
+console.log(stringObj.replace(findWord , replaceWord))*/
 
 // console.log(stringObj.split(" "))
 // console.log(stringObj.split(""))
