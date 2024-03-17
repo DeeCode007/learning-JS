@@ -22,4 +22,6 @@ let undfnd ; // undfnd is a undefined datat type
 
 //NULL => IT IS A EMPTY VARIABLE
 let car = null ; // car variable has null type;
-car => "" // car variable has string data type as there are double inverted coma . nulll and this both are differents.
+car => "" // car vari
+
+//able has string data type as there are double inverted coma . nulll and this both are differents.

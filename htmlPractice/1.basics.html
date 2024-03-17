@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\91777\OneDrive\Desktop\GITHUB DIRECTORY\htmlPractice\externalCss.css">
+    <title>Practice1</title>
+</head>
+
+<body>
+    <a href="https://www.google.com" target="_main">Google</a>
+    <!-- we need to use full webaddress by using https and full url to go to another webpage otherwise it will found the file name or folder name in the corrent folder -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKpjDHoDdjgCsi_69-pBSyjRa9FxYsfV5EI-b27ntClA&s"
+        alt="link is not working">
+    <img src="C:\Users\91777\OneDrive\Desktop\GITHUB DIRECTORY\htmlPractice\images\free-images.avif">
+    <!-- image should be in same folder we of the project -->
+    <a href="https://www.google.com">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz3pKTkq6kCD633MjS0CH9iv5YlOJ8goyYcA&usqp=CAU">
+    </a>
+    <!-- clickable image -->
+    <P> it is just a example of <b>nested</b> tags</P>
+    -----------------------------------------------------------------------------------------------------------------
+    <!-- LIST -->
+    <ul>
+        <li>Mango
+            <ul>
+                <li>yellow</li>
+                <li>sweet</li>
+            </ul>
+        </li>
+        <li>Lemon
+            <ul>
+                <li>yellow</li>
+                <li>sour</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!-- ordered list work as same  -->
+    -----------------------------------------------------------------------------------------------------------------
+
+    <!-- TABLE  -->
+
+    <table>
+        <caption>Student data</caption>
+
+        <tr>
+            <thead>
+                <th>student name</th>
+                <th>roll no</th>
+            </thead>
+        </tr>
+        <tbody>
+            <tr>
+                <td>Rohan</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>Lucky</td>
+                <td>98</td>
+            </tr>
+        </tbody>
+    </table>
+    -----------------------------------------------------------------------------------------------------------------
+    <!-- FORM  -->
+    <br>
+    <!-- there are two ways to use lable tag.
+    first one is without 'for' attribute and second one is with 'for' attribute -->
+    <!-- FIRST WAY -->
+    <label>
+        <input type="radio" name="Gender" value="male" id="101"> male
+    </label>
+    <label>
+        <input type="radio" name="Gender" value="fmale" id="102"> female
+    </label>
+    <!-- There are no way to use lable tag for all element , we will have to use it separately for each element. -->
+    <br>
+    <!-- SECOND WAY -->
+    <input type="radio" name="FavSub" value="HTML" id="html">
+    <label for="html">HTML</label>
+    <input type="radio" name="FavSub" value="CSS" id="css">
+    <label for="css">CSS</label>
+
+    <!-- SELECT  -->
+
+    <select name="city">
+        <option value="Delhi">Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Neemuch">Neemuch</option>
+    </select>
+    <br>
+    <!-- FORM example -->
+-----------------------------------------------------------------------------------------------------------------
+    <form action="">
+        First Name :<input type="text" placeholder="Enter your Fname" required>
+        <br>
+        Second Name<input type="text" placeholder="Enter your Sname" required>
+        <br>
+        Email:<input type="email" placeholder="Enter your email" required>
+        <br>
+        Mobile No.<input type="number" placeholder="Enter your mob no" required>
+        <br>
+        Gender: <input type="radio" name="Gender" value="male" id="male">
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" name="Gender" value="female" id="female">
+        <label for="female">Female</label>
+        <br>
+        Subjects:
+        <input type="checkbox" name="Subject" value="Maths">Maths
+        <input type="checkbox" name="Subject" value="Bio">Bio
+        <input type="checkbox" name="Subject" value="Arts">Arts
+        <br>
+        <select name="city">
+            <option value="Indore">Indore</option>
+            <option value="Bhopal">Bhopal</option>
+        </select>
+        <br>
+        <input type="password" placeholder="Create your password" multiple required>password 
+        <br>
+        <textarea name="feedback"cols="30" rows="10" placeholder="Enter feedback"></textarea>
+        <input type="submit" value="button">
+    </form>
+</body>
+
+</html>

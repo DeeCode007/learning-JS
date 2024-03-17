@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+         p{
+            display: inline;
+        }
+        .block{
+            width: 500px; /*it will not work as inline can't take width*/
+            border: 2px solid black;
+            display: inline;
+        }
+        .block2{
+            width: 500px;
+            border: 2px solid black;
+        }
+        p{
+            display: inline;
+        }
+        /* according to rule, if we declare a block level element to inline level element (block1) and we use another block level element (p) as its child element then things will not work correctly so we need to change child element (p) to inline element. */
+    </style>
+    <!-- main 4 point 
+    1. override default display Property
+    2. overrided element can't have a another level element as a child element
+    3. display: none (no space occupation), visibility: hidden (space occupation)
+    4. we can't set width of a inline element -->
+</head>
+<body>
+    <div class="block">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat exercitationem corrupti adipisci vero atque fugit? Sunt eum, fuga iure odit numquam asperiores. Quia laboriosam sapiente molestiae illum quo, quae velit. Accusantium, porro ipsa? Accusantium.</p>
+    </div>
+    <div class="block">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolore, similique dolores nesciunt, sapiente aut minima laudantium illo, ratione eveniet tenetur magnam soluta eos consequuntur eligendi mollitia expedita quas repudiandae?
+        </p>
+    </div>
+</body>
+</html>
