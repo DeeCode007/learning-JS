@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .horiContainer {
+            width: 80%;
+            height: 600px;
+            margin: auto;
+            border: 2px solid black;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .horiBox {
+            /* width: 200px; */
+            height: 200px;
+            border: 2px solid black;
+        }
+
+        #horiBox1 {
+            /* order: 3; */
+            /* flex-grow: 1; */
+            /* flex-shrink: 12; */
+            /* flex-basis: 120px; */
+            /* align-self: center; */
+            flex-shrink: 2;
+        }
+
+        #horiBox2 {
+            order: 4;
+            /* flex-grow: 4; */
+            /* flex-shrink: 3; */
+        }
+
+        #horiBox3 {
+            order: -1;
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; */
+        }
+
+        #horiBox4 {
+            order: 5
+            /* flex-shrink: 8; */
+        }
+
+        #horiBox5 {
+            order: 6;
+            /* flex-shrink: 4; */
+        }
+
+        #horiBox6 {
+            order: 2;
+            /* flex-shrink: 1; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="horiContainer">
+        <div class="horiBox" id="horiBox1">box 1</div>
+        <div class="horiBox" id="horiBox2">box 2</div>
+        <div class="horiBox" id="horiBox3">box 3</div>
+        <div class="horiBox" id="horiBox4">box 4</div>
+        <div class="horiBox" id="horiBox5">box 5</div>
+        <div class="horiBox" id="horiBox6">box 6</div>
+    </div>
+</body>
+
+</html>

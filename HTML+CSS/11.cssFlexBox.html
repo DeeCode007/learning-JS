@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1{
+            border: 2px solid black;
+            width: 80%;
+            height: 600px;
+            display: flex;
+            flex-flow: row wrap;
+            margin: auto;
+            /* justify-content: center; */
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: flex-end; */
+            /* justify-content: space-between;  */ 
+            /* space-between har ek alg row me, row me maujud elements ke bich me gap layega */
+            justify-content: space-evenly;   
+        }
+        .justifyBox , .alignBox , .alignItemBox, .alignSelfBox{
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+        }
+        .container2{
+            border: 2px solid black;
+            width: 80%;
+            height: 600px;
+            display: flex;
+            flex-flow: row wrap;
+            margin: auto;
+            /* align-content: center; */
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            /* align-content: space-between; */
+            /* align-content:space-around; */
+            /* justify-content: space-around; */
+            /* align-content: space-evenly; */
+        }
+        .container3{
+            border: 2px solid black;
+            width: 80%;
+            height: 600px;
+            margin: auto;
+            display: flex;
+            align-items: stretch;
+            flex-flow: row wrap;  
+            /* align-items: center; */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items:stretch; */
+        }
+        .container4{
+            border: 2px solid black;
+            width: 80%;
+            height: 600px;
+            margin: auto;
+            display: flex;
+            flex-flow: row wrap;
+            /* align-self: center; */
+            /* align-self: flex-start; */
+            /* align-self: flex-end; */
+        }
+        /* note: according to my understanding
+        1. align-items = align-content + space-around
+        2. align-self = align-content + space-evenly */
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;"><B>justify-content</B></h2>
+    <div class="container1">
+        <div class="justifyBox" id="justifybox1">box1</div>
+        <div class="justifyBox" id="justifybox2">box2</div>
+        <div class="justifyBox" id="justifybox3">box3</div>
+        <div class="justifyBox" id="justifybox4">box4</div>
+        <div class="justifyBox" id="justifybox5">box5</div>
+        <div class="justifyBox" id="justifybox6">box6</div>
+    </div>
+    <h2 style="text-align: center;"><B>align-content</B></h2>
+    <div class="container2">
+        <div class="alignBox" id="alignbox1">box 1</div>
+        <div class="alignBox" id="alignbox2">box 2</div>
+        <div class="alignBox" id="alignbox3">box 3</div>
+        <div class="alignBox" id="alignbox4">box 4</div>
+        <div class="alignBox" id="alignbox5">box 5</div>
+        <div class="alignBox" id="alignbox6">box 6</div>
+    </div>
+    <h2 style="text-align: center;"><b>align-item</b></h2>
+    <div class="container3">
+        <div class="alignItemBox" id="alignItemBox1">box 1</div>
+        <div class="alignItemBox" id="alignItemBox2">box 2</div>
+        <div class="alignItemBox" id="alignItemBox3">box 3</div>
+        <div class="alignItemBox" id="alignItemBox4">box 4</div>
+        <div class="alignItemBox" id="alignItemBox5">box 5</div>
+        <div class="alignItemBox" id="alignItemBox6">box 6</div>
+    </div>
+    <h2 style="text-align: center;">align-self</h2>
+    <div class="container4">
+        <div class="alignSelfBox" id="alignSelfBox1">box 1</div>
+        <div class="alignSelfBox" id="alignSelfBox2">box 2</div>
+        <div class="alignSelfBox" id="alignSelfBox3">box 3</div>
+        <div class="alignSelfBox" id="alignSelfBox4">box 4</div>
+        <div class="alignSelfBox" id="alignSelfBox5">box 5</div>
+        <div class="alignSelfBox" id="alignSelfBox6">box 6</div>
+    </div>
+</body>
+</html>
