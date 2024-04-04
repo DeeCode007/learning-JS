@@ -24,14 +24,26 @@
     //note -  it is always true if number is not 0 nor a empty value nor a NaN then it will always show true if even given value is string.
 
 // string to number
-let string1 = "33abc"
+// let string1 = "33"
 // console.log(typeof string1)
 // string2 = Number(string1) //converting string to number
 // console.log(typeof string2)
     //output => string ; number
 
 // string+number to number
+// let string1 = "33abc"
 //string2 = Number(string1)
 //console.log(typeof string2)
 //console.log (string2)
     // output => number ; NaN (Not an Number) 
+
+// string => NaN;
+//null => 0;
+//true => 1;
+//false => 0;
+//undefined => NaN
+
+// console.log("2" = 2);
+// console.log()
+
+//Do not confuse the primitive Boolean values true and false with truthiness or falsiness of the Boolean object. Any value that is not false, undefined, null, 0, -0, NaN, or the empty string (""), and any object, including a Boolean object whose value is false, is considered truthy when used as the condition.

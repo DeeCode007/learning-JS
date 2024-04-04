@@ -10,7 +10,7 @@ let mydate = new Date()
 
 //how to create a date
 //let myCreatedDate = new Date (2001,5,21,5,3,1) //first type of inputing date always insert date as yy,mm,dd,hh,mm,ss and if you dont wanna time to include in your date just don't need to write it in the code.
-let myCreatedDate = new Date (2023,5,22,5) //  second way to input date as string "mm-dd-yy" and you wil get result in "dd-mm-yy0"
+let myCreatedDate = new Date (2023,5,22,5) //  second way to input date as string "mm-dd-yy" and you wil get result in "dd-mm-yy"
 // console.log(myCreatedDate.toLocaleDateString())
 // console.log(myCreatedDate.getTime())
 
@@ -23,7 +23,7 @@ let myCreatedDate = new Date (2023,5,22,5) //  second way to input date as strin
 // console.log(myCreatedDate.getTime)
 // console.log(Math.floor(myTimeStamp/1000))
 
-// how to change the view of date we get through by toLocaleString by adding some property in it.
+// how to change the view of date we get through by toLocaleString by adding some property in it and also .get() functions shows data only in numeric but we can use this thing to get data in our own way.
 // console.log(myCreatedDate.toLocaleString("default",{
 //         hour : "numeric",
 //         weekday : "short"
